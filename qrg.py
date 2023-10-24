@@ -15,7 +15,7 @@ def generate_qr_code():
     qr_image = qr.make_image(fill_color="black", back_color="white")
 
     # Display the QR code image above the input field
-    qr_image = qr_image.resize((200, 200))  # Adjust the size as needed
+    qr_image = qr_image.resize((200, 200)) 
     photo = ImageTk.PhotoImage(qr_image)
     qr_label.config(image=photo)
     qr_label.image = photo
